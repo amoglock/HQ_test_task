@@ -19,9 +19,13 @@ git clone https://github.com/amoglock/HQ_test_task.git <br>
 
 ## Использование
 
-1. Создать и запустить миграции: `python manage.py makemigrations` и `python manage.py migrate`
+1. Создать и запустить миграции:<br> 
+   - `python manage.py makemigrations` <br>
+   - `python manage.py migrate`<>br
 2. Запустить сервер разработки: `python manage.py runserver`
-4. Для заполнения базы данных: `python manage.py loaddata products/fixtures/courses.json` и `python manage.py loaddata products/fixtures/lessons.json`
+4. Для заполнения базы данных:<br>
+   - `python manage.py loaddata products/fixtures/courses.json` 
+   - `python manage.py loaddata products/fixtures/lessons.json`
  
 5. Перейти к приложению по адресу http://127.0.0.1:8000/
 </details>
