@@ -23,7 +23,7 @@ git clone https://github.com/amoglock/HQ_test_task.git <br>
 2. Запустить сервер разработки: `python manage.py runserver`
 4. Для заполнения базы данных: `python manage.py loaddata products/fixtures/courses.json` и `python manage.py loaddata products/fixtures/lessons.json`
  
-5. Перейти к приложению по адресу `http://127.0.0.1:8000/`
+5. Перейти к приложению по адресу http://127.0.0.1:8000/
 </details>
 
 ## Задание
