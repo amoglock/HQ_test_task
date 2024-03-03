@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ product.title }}</title>
+</head>
+<body>
+    <h1>{{ product.title }}</h1>
+    <p>Начало продаж: {{ product.start_date_time }}</p>
+    <p>Стоимость: {{ product.cost }}</p>
+
+    <h2>Уроки:</h2>
+    {% if lessons %}
+        <ul>
+            {% for lesson in lessons %}
+                <li>
+                    {{ lesson.title }} - {{ lesson.video_link }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Нет уроков для этого продукта.</p>
+    {% endif %}
+
+    <a href="{% url 'homepage' %}"><button>На главную</button></a>
+</body>
+</html>

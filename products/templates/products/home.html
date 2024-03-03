@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="header">
+    <h1>My Site</h1>
+    {% if user.is_authenticated %}
+        <p>Привет, {{ user.username }}! <a href="{% url 'logout' %}">Выйти</a></p>
+    {% else %}
+        <p><a href="{% url 'login' %}">Войти</a> | <a href="{% url 'register' %}">Регистрация</a></p>
+    {% endif %}
+</div>
+    <h1>Список продуктов</h1>
+    {% if products %}
+        <ul>
+            {% for product in products %}
+                <li>{{ product.title }} - {{ product.start_date_time }} - {{ product.cost }}
+                    <form method="post" action="{% url 'purchase_product' product.id %}">
+                        {% csrf_token %}
+                        <button type="submit">Купить</button>
+                    </form>
+                    <a href="{% url 'view_product' product.id %}"><button>Посмотреть продукт</button></a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Нет доступных продуктов.</p>
+    {% endif %}
+</body>
+</html>
