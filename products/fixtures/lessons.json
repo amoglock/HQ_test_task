@@ -1,0 +1,74 @@
+[
+  {
+    "model": "products.lesson",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "title": "Урок 1",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "title": "Урок 2",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 3,
+    "fields": {
+      "product": 1,
+      "title": "Урок 3",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "title": "Урок 1",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 5,
+    "fields": {
+      "product": 2,
+      "title": "Урок 2",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 6,
+    "fields": {
+      "product": 3,
+      "title": "Урок 1",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 7,
+    "fields": {
+      "product": 3,
+      "title": "Урок 2",
+      "video_link": "https://www.youtube.com/"
+    }
+  },
+  {
+    "model": "products.lesson",
+    "pk": 8,
+    "fields": {
+      "product": 3,
+      "title": "Урок 3",
+      "video_link": "https://www.youtube.com/"
+    }
+  }
+]
