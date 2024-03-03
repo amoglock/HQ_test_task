@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from products.models import Purchase, Team, Product
+from products.models import Purchase, Team, Product, Lesson
 from products.utils.sort_student import sort_student
 
 
@@ -15,5 +15,6 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Product, ProductAdmin)
+admin.site.register(Lesson)
 admin.site.register(Purchase)
 admin.site.register(Team)
